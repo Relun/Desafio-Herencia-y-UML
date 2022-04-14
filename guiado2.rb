@@ -54,6 +54,15 @@ end
 puts OneTimeAppointment.new('Desafío Latam', 'Trabajo', 14, 30, 4, 6, 2019)
 puts DailyAppointment.new('Desafío Latam', 'Educación', 8, 15)
 puts MonthlyAppointment.new('NASA', 'Aliens', 8, 15, 23)
+#citas por cada clase
+cita3 = OneTimeAppointment.new('parque', 'picnic', 16, 45, 14, 8, 2022)
+cita2 = DailyAppointment.new('pub', 'baile', 23, 30)
+cita1 = MonthlyAppointment.new('casa', 'comida', 13, 00, 12)
+#probando metodo occurs con cada objeto creado
+puts cita3.occurs_on?(22,8,2021)
+puts cita2.occurs_on?(10,30)
+puts cita1.occurs_on?(12)
+
 
 
 
